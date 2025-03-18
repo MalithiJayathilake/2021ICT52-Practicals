@@ -1,21 +1,23 @@
-# 2025.03.10 Day01
+# 2025.03.17 Day02
 
-This JavaScript code shows some fundamental programming concepts
+# JSON
+
+This JavaScript code shows creation of arrays for representing data.
 
 # Content
 
-Basic Arithmetic Operations
-
-Loops - for loop
-
-Conditional Statements - if statement
-
-Reverse Left and Right Logic
+Object Creation (Single Student)
+Array of Objects (Multiple Students)
 
 # Implementation
 
-Variable Declarations - let and var are used to declare variables.
+This code demonstrates a basic way to represent student data in JavaScript. 
+This is a fundamental concept storing and processing data.
 
-Console Outpu - console.log() is used to display output.
 
-Modulo Operator - The % operator calculates the remainder of a division. It is used to determine if a number is odd or even.
+# Array
+
+# Content
+
+This JavaScript code shows array operations, including array creation, iteration, finding maximum values, nested array, finding common elements, and push and pop operations.
+
