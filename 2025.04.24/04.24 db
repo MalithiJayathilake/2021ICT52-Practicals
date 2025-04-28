@@ -1,0 +1,75 @@
+//Insert one data at one time
+
+db.students.insertOne(
+{
+  "regno": "2021ICT129",
+  "name": "Shakila",
+  "age": 23,
+  "gender": "Female",
+  "degree": "IT",
+  "gpa": 2.3,
+  "skills": [
+    "JS",
+    "NodeJS",
+    "MongoDB"
+  ]
+}
+)
+
+============================================
+//Insert more data at one time 
+
+
+db.students.insertMany(
+	[
+		{
+			"regno": "2021ICT21",
+			"name": "Rayan",
+			"age": 25,
+			"gender": "Male",
+			"degree": "IT",
+			"gpa": 3.1,
+			"skills": [
+				"JS",
+				"NodeJS",
+				"MongoDB"
+			]
+		},
+		
+		{
+			"regno": "2021ICT14",
+			"name": "Yehan",
+			"age": 24,
+			"gender": "Male",
+			"degree": "IT",
+			"gpa": 2.3,
+			"skills": [
+				"JS",
+				"NodeJS",
+				"MongoDB"
+			]
+		}
+	]
+)
+
+============================================
+//Sort Female students
+
+db.students.find({"gender":"Female"})
+
+============================================
+//Find the first female student in the list
+
+db.students.findOne({"gender":"Female"})
+
+=============================================
+//sort the student according to the gpa
+
+db.students.find().sort({'gpa':1})
+db.students.find({'degree':'IT'}).sort({'gpa':1})
+
+==============================================
+
+db.students.find({'degree':'IT','gender':'Male'}).sort({'gpa':1})
+========================================================
+
